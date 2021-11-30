@@ -1,0 +1,18 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+count=n
+occ=1
+for i in range(n):
+    str1=list(map(str,input().split()))
+for i in range(n):
+    for j in range(i+1,n):
+        if(str1[i]==str1[j]):
+            count=count-1    
+print(count)
+for i in range(n):
+    occ=1
+    for j in range(i+1,n):
+        if(str1[i]==str1[j]):
+            occ=occ+1 
+            print(occ,end=" ")
+                       
